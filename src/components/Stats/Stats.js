@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import randomColor from "randomcolor";
-import style from "./Stats.module.css";
-import StyleItem from "./Stats.styled";
+import React from 'react';
+import PropTypes from 'prop-types';
+import randomColor from 'randomcolor';
+import style from './Stats.module.css';
+import StyleItem from './Stats.styled';
 
 const Stats = ({ title, statistics }) => (
   <div className={style.background}>
@@ -22,7 +22,7 @@ const Stats = ({ title, statistics }) => (
 );
 
 Stats.defaultProps = {
-  title: ""
+  title: '',
 };
 
 Stats.propTypes = {
@@ -31,9 +31,9 @@ Stats.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired
-    }).isRequired
-  ).isRequired
+      percentage: PropTypes.number.isRequired,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default Stats;

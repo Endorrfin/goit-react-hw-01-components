@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import style from "./FriendList.module.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import style from './FriendList.module.css';
 
 const FriendList = ({ friends }) => (
   <div className={style.background}>
@@ -30,9 +30,9 @@ FriendList.propTypes = {
       id: PropTypes.number.isRequired,
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      isOnline: PropTypes.bool.isRequired
-    })
-  ).isRequired
+      isOnline: PropTypes.bool.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default FriendList;

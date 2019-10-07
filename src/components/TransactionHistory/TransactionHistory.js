@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import style from "./TransactionHistory.module.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import style from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => (
   <div className={style.background}>
@@ -32,9 +32,9 @@ TransactionHistory.propTypes = {
       id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
       amount: PropTypes.string.isRequired,
-      currency: PropTypes.string.isRequired
-    })
-  ).isRequired
+      currency: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default TransactionHistory;
